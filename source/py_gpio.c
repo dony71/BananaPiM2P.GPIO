@@ -89,6 +89,7 @@ static PyObject *py_setopi(PyObject *self, PyObject *args)
     case 4 : pin_to_gpio = &pin_to_gpio_pc; break;
     case 5 : pin_to_gpio = &pin_to_gpio_pc2; break;
     case 6 : pin_to_gpio = &pin_to_gpio_prime; break;
+    case 7 : pin_to_gpio = &pin_to_gpio_prime; break;
   }
 
   Py_RETURN_NONE;
