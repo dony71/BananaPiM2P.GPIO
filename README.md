@@ -1,6 +1,6 @@
-# OrangePi.GPIO
+# BananaPiM2P.GPIO
 
-This is a modified version of **RPi.GPIO** for Orange Pi Boards.
+This is a modified version of **RPi.GPIO** for Banana Pi M2+ Boards.
 
 It is based on the original [RPi.GPIO](https://pypi.python.org/pypi/RPi.GPIO).
 
@@ -8,14 +8,14 @@ It is based on the original [RPi.GPIO](https://pypi.python.org/pypi/RPi.GPIO).
 
 #### With PIP
 
-    sudo pip install OrangePi.GPIO
+    sudo pip install BananaPiM2P.GPIO
 
 #### Manual
 
     sudo apt-get update
     sudo apt-get install python-dev git
-    git clone https://github.com/Jeremie-C/OrangePi.GPIO
-    cd /OrangePi.GPIO
+    git clone https://github.com/dony71/BananaPiM2P.GPIO.git
+    cd /BananaPiM2P.GPIO
     sudo python setup.py install
 
 ## Supported Boards
@@ -30,13 +30,14 @@ It is based on the original [RPi.GPIO](https://pypi.python.org/pypi/RPi.GPIO).
 * OPi LITE
 * OPi PC2
 * OPi PRIME
+* BPi M2 PLUS
 
 ## Usage
 
-Same as RPi.GPIO but with a new function to choose OrangePi Board.
+Same as RPi.GPIO but with a new function to choose BananaPi M2+ Board.
 
-    import OPi.GPIO as GPIO
-    GPIO.setboard(GPIO.ZEROPLUS)
+    import BPi.GPIO as GPIO
+    GPIO.setboard(GPIO.M2P)
     GPIO.setmode(GPIO.BOARD)
     GPIO.output(5, 1)
 
