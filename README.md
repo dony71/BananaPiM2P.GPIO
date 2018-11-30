@@ -1,6 +1,6 @@
 # BananaPiM2P.GPIO
 
-This is a modified version of **RPi.GPIO** for Banana Pi M2+ Boards.
+This is a modified version of **RPi.GPIO** for Orange Pi and Banana Pi Boards.
 
 It is based on the original [RPi.GPIO](https://pypi.python.org/pypi/RPi.GPIO).
 
@@ -36,7 +36,7 @@ It is based on the original [RPi.GPIO](https://pypi.python.org/pypi/RPi.GPIO).
 
 Same as RPi.GPIO but with a new function to choose BananaPi M2+ Board.
 
-    import BPi.GPIO as GPIO
+    import OPi.GPIO as GPIO
     GPIO.setboard(GPIO.M2P)
     GPIO.setmode(GPIO.BOARD)
     GPIO.output(5, 1)
