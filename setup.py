@@ -36,15 +36,15 @@ classifiers = ['Development Status :: 3 - Alpha',
 with open("README.md", "r") as fh:
       long_description = fh.read()
 
-setup(name             = 'OrangePi.GPIO',
+setup(name             = 'BananaPi.GPIO',
       version          = '0.6.3',
       author           = 'Jeremie-C',
-      description      = 'A module to control OrangePi GPIO channels',
+      description      = 'A module to control BananaPi GPIO channels',
       long_description=long_description,
       long_description_content_type="text/markdown",
       license          = 'MIT',
-      keywords         = 'OrangePi GPIO',
-      url              = 'https://github.com/Jeremie-C/OrangePi.GPIO',
+      keywords         = 'BananaPi GPIO',
+      url              = 'https://github.com/dony71/BananaPiM2P.GPIO',
       classifiers      = classifiers,
-      packages         = ['OPi'],
-      ext_modules = [Extension('OPi.GPIO', ['source/py_gpio.c', 'source/c_gpio.c', 'source/boards.c', 'source/common.c', 'source/constants.c', 'source/soft_pwm.c', 'source/py_pwm.c', 'source/event_gpio.c'])])
+      packages         = ['BPi'],
+      ext_modules = [Extension('BPi.GPIO', ['source/py_gpio.c', 'source/c_gpio.c', 'source/boards.c', 'source/common.c', 'source/constants.c', 'source/soft_pwm.c', 'source/py_pwm.c', 'source/event_gpio.c'])])
