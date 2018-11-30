@@ -214,7 +214,7 @@ int gpio_function_name(int gpio, int func, int board)
       {
         case 5 : str = 37; break;
         case 6 : // PWM1 only H3
-          if (board == 1 || board == 3 || board == 4) {
+          if (board == 1 || board == 3 || board == 4 || board == 7) {
             str = 38;
           } else {
             str = 4;
